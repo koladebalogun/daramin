@@ -1,0 +1,144 @@
+.wrapper {
+  padding: 10px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  padding: 8rem 0;
+}
+
+.bannername {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bannername2 span {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  text-decoration-color: orangered;
+  color: #fff;
+}
+
+.bannerimages {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider1 {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 10px;
+  animation: slide 40s linear infinite;
+}
+
+.bannerimages .slider2 {
+  text-align: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  animation: slide2 40s linear infinite;
+  align-items: center;
+}
+
+.slider3 {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 80px;
+  animation: slide 40s linear infinite;
+}
+
+.imagecard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 30px;
+  background: orangered;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.sliderimage {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  display: flex;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.innercarousel {
+  display: flex;
+  padding: 10px 0;
+}
+
+.innerWrappper {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 20rem;
+  min-height: 25rem;
+  padding: 5px;
+  pointer-events: none;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.name {
+  color: #fff;
+  text-decoration: line-through;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.link {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.link:hover {
+  text-decoration: line-through;
+  text-decoration-color: orangered;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 10));
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(calc(-100px * 10));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,91 @@
+#togglebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.btnoutline {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid orangered;
+}
+
+.btnoutline1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 4s linear infinite;
+}
+
+.btnoutline2 {
+  border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
+  /* animation: morph 4s linear infinite; */
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.home {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.home a {
+  color: orangered;
+  text-decoration: none;
+  transition: all 0.7s ease;
+}
+
+.home a:hover {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 980px) {
+  #togglebtn {
+    left: -5%;
+  }
+
+  .btnoutline {
+    width: 70px;
+    height: 70px;
+  }
+
+  .home a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 498px) {
+  #togglebtn {
+    left: -12%;
+  }
+
+  .btnoutline {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid orangered;
+  }
+
+  .home a {
+    font-size: 10px;
+  }
+}
